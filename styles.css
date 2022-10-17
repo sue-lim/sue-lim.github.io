@@ -152,9 +152,9 @@ section {
 /* contact me page */
 .section-d {
   text-align: center;
-  display: flex;
-  /* flex: wrap; */
-  width: 100%;
+  /* display: flex;
+  flex: wrap; */
+  width: auto;
   color: #57bb95;
 }
 div {
@@ -195,40 +195,43 @@ div {
 /* FORM AREA  */
 
 .f-row {
-  display: inline-table;
+  display: inline-block;
   text-align: center;
+  align-items: stretch;
+  width: 100%;
 }
 /*names*/
 .form-item-1 {
   width: 50%;
   background-color: white;
   padding: 20px;
-  display: inline-table;
+  display: flex;
+  flex-flow: wrap;
 }
 /*email */
 .form-item-2 {
   width: 50%;
   background-color: white;
   padding: 20px;
-
-  display: inline-table;
+  display: flex;
+  flex-flow: wrap;
 }
 /*message */
 .form-item-3 {
   width: 50%;
   background-color: white;
   padding: 20px;
-  display: inline-table;
-  flex-shrink: inherit;
+  display: flex;
+  flex-flow: wrap;
 }
 /*--button--*/
 .form-item-4 {
   width: 50%;
   background-color: white;
   padding: 20px;
-
   border-radius: 2px;
-  display: inline-table;
+  display: flex;
+  flex-flow: wrap;
 }
 label {
   font-weight: bold;
