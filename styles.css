@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@500&family=Noto+Serif+Telugu:wght@600&display=swap");
+
+div.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+/* * {
+  border: 2px solid grey;
+} */
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* <*-- split background code --*> */
+body {
+}
+p {
+  color: white;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+header {
+  padding-top: 20px;
+  background-color: #57bb95;
+  padding-bottom: 5px;
+}
+/* SOCIAL MEDIA BAR ICON */
+.social-m-icons {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  filter: invert(100%);
+  padding: 1px;
+}
+
+/* Profile Picture */
+.image-4 {
+  image: url("images/profilegyb.png");
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* portfolio icons */
+.p-icons {
+  height: 120px;
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* filter: invert(50%); */
+  vertical-align: middle;
+}
+/* homepage icons */
+.h-icons {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert(100%);
+  vertical-align: middle;
+}
+h1 {
+  color: white;
+  /* padding-top: 30px; */
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size-adjust: initial;
+}
+h2 {
+  color: white;
+  text-align: start;
+  padding-left: 20px;
+}
+h3 {
+  color: gray;
+  text-align: start;
+  /* padding-left: 10px; */
+}
+h4 {
+  color: white;
+  text-align: center;
+
+  font-size: larger;
+}
+.blue-text {
+  color: #4268b3;
+  font-size: larger;
+}
+.nav-column {
+  width: 50%;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+#nav-column-1 {
+  text-align: left;
+  padding-left: 20px;
+}
+#nav-column-2 {
+  text-align: right;
+  padding-right: 20px;
+}
+a {
+  color: white;
+}
+/* change color of hover */
+a:hover {
+  color: #4268b3;
+  border-bottom: 0px;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+section {
+  background-color: #fff;
+}
+/* about me section */
+.section-a {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #feab03;
+}
+/* home page boxes*/
+.section-b {
+  text-align: center;
+  display: flex;
+  flex: wrap;
+  width: 100%;
+}
+/* portfolio page */
+.section-c {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #feab03;
+}
+/* contact me page */
+.section-d {
+  text-align: center;
+  /* display: flex;
+  flex: wrap; */
+  width: auto;
+  color: #57bb95;
+}
+div {
+}
+.div-whitespace-1 {
+  height: 20px;
+  column-rule-color: #fff;
+}
+.div-whitespace-2 {
+  height: 40px;
+  column-rule-color: #fff;
+}
+.div-whitespace-3 {
+  height: 60px;
+  column-rule-color: #4268b3;
+}
+/* home page boxes */
+.hcolumn {
+  text-align: center;
+  padding-top: 5px;
+  height: 150px;
+  background-color: #4268b3;
+  width: 100%;
+  /* width: 33.33%; */
+  /* box-sizing: border-box; */
+}
+/* NOT REQUIRED UNLESS DIV BOXES ARE USING DIFFERENT COLORS */
+#hcolumn-1 {
+  background-color: #4268b3;
+}
+#hcolumn-2 {
+  background-color: #4268b3;
+}
+#hcolumn-3 {
+  background-color: #4268b3;
+}
+
+/* FORM AREA  */
+
+.f-row {
+  display: inline-block;
+  text-align: center;
+  align-items: stretch;
+  width: 100%;
+}
+/*names*/
+.form-item-1 {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-flow: wrap;
+}
+/*email */
+.form-item-2 {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-flow: wrap;
+}
+/*message */
+.form-item-3 {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-flow: wrap;
+}
+/*--button--*/
+.form-item-4 {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 2px;
+  display: flex;
+  flex-flow: wrap;
+}
+label {
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #5e7992;
+  width: 100%;
+  display: flex;
+}
+input {
+  display: flex;
+  background-color: #f9fafa;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+input[type="message"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+button {
+  background-color: #4268b3;
+  border: none;
+  color: white;
+  width: 500px;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* MY PORTFOLIO PAGE */
+.pcolumn {
+  text-align: center;
+  padding-top: 10px;
+  height: 250px;
+  background-color: #feab03;
+  width: 100%;
+}
+/* PORTFOLIO PAGE */
+#pcolumn-1 {
+  background-color: #feab03;
+}
+#pcolumn-2 {
+  background-color: #feab03;
+}
+#pcolumn-3 {
+  background-color: #feab03;
+}
+footer {
+  text-align: center;
+  padding-top: 10px;
+  height: 30px;
+  background-color: #57bb95;
+  color: white;
+}
+
+/*** Media Queries Below ***/
+/*** Media Queries Below ***/
+
+@media (max-width: 600px) {
+  .section-b,
+  .section-d {
+    flex-direction: column;
+  }
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+}
