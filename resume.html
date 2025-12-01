@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sue Lim">
+    <meta name="description" content="Portfolio home page for Web Development course.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/site.css"> <!-- Tailwind -->
+    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Custom Styles -->
+    <script defer src="/assets/js/main.js"></script>
+    <title>Sue Lim | My Resume</title>
+</head>
+
+<body class="bg-gradient-to-r from-[#2E266D] to-[#0B0320] text-white flex flex-col">
+
+    <!-- NAVIGATION -->
+    <header class="w-full">
+        <!-- NAV BAR -->
+        <nav class="flex justify-between items-center p-4">
+
+            <!-- Logo -->
+            <a href="/">
+                <img src="/assets/img/logo-375px.png" alt="return to homepage icon" class="w-14">
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex gap-4 text-sm">
+                <li><a href="/" class="nav-hover-behaviour">Home</a></li>
+                <li><a href="/about.html" class="nav-hover-behaviour">About</a></li>
+                <li><a href="/my-portfolio.html" class="nav-hover-behaviour">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="nav-hover-behaviour">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="nav-hover-behaviour">Resume</a></li>
+                <li><a href="/contact.html" class="nav-hover-behaviour">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger for Mobile / Sml View  -->
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="hidden peer-checked:block rounded absolute right-0 w-120 h-50 p-4 z-40 bg-slate-500 opacity-400 top-20 text-center md:hidden ">
+            <ul class="flex flex-col divide-y-2 divide-gray-300">
+                <li><a href="/" class="hamburger-menu-link">Home</a></li>
+                <li><a href="/about.html" class="hamburger-menu-link">About</a></li>
+                <li><a href="/my-portfolio.html" class="hamburger-menu-link">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="hamburger-menu-link">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="hamburger-menu-link">Resume</a></li>
+                <li><a href="/contact.html" class="hamburger-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="flex flex-col justify-between px-10 pb-20">
+
+        <h1 class="text-6xl mb-10 mt-10 md:text-6xl font-bold text-primary">Résumé</h1>
+
+        <section class="text-lg text-justify md: mb-10">
+            <h2 class="text-xl text-xl pb-6">Objective</h2>
+            <p>Tech enthusiast & Associate Software Engineer with hands-on experience in developing and testing code for
+                the finance industry, specifically within PowerCurve Strategy Manager. I thrive in collaborative,
+                fast-paced environments and have a strong drive to succeed, complemented by a detail-oriented and
+                reliable work ethic. Currently working in a Kanban-based Agile team, I contribute to increment planning,
+                stakeholder discussions, and the full development lifecycle—from coding and testing to senior developer
+                reviews and production deployment.</p>
+            <br>
+            <p>I hold an Agile Methodology certification and am a proud graduate of the selective She Codes program,
+                which helped strengthen my foundation in software development. I am also currently enrolled in a <abbr
+                    title="Technical and Further Education">TAFE</abbr> course to further expand my technical skills.
+                Passionate about coding and continuous learning, I am excited to grow further and make impactful
+                contributions in the tech industry.
+            </p>
+        </section>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- SKILLS -->
+            <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+                <h2 class="text-xl pb-6">Skills</h2>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li>
+                        <p><strong>Programming Languages:</strong></p>
+                        <p>HTML, CSS, Python, Django, React, JavaScript, C#, OOP Fundamentals<br>Version Control: GIT
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Project Management Tools:</strong></p>
+                        <p>Confluence, JIRA, Scrum, Agile</p>
+                    </li>
+                    <li>
+                        <p><strong>Microsoft Office Suite:</strong></p>
+                        <p>Word, Excel, PowerPoint, Visio, OneNote, Projects, Publisher, Power BI, SharePoint</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- EDUCATION -->
+            <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+                <h2 class="text-xl pb-6">Education</h2>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li>2023 – Current<p><strong>Certificate IV Information Technology in Programming</strong></p>
+                        <em>Perth North Metropolitan TAFE</em>
+                    </li>
+                    <li>2022 – 2023<p><strong>She Codes Plus Coding Boot Camp</strong></p><em>She Codes Australia</em>
+                    </li>
+                    <li>2002 – 2004<p><strong>Postgraduate Diploma Electronic Commerce</strong>
+                        <p><em>Curtin University</em></p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md">
+                <h2 class="text-xl pb-6">Experience</h2>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li>Feb 2024 – Present<p><strong>Associate Software Engineer</strong></p><em>Bankwest – IT</em></li>
+                    <li>2012 – 2024<p><strong>Executive Assistant</strong></p><em>Bankwest – Financial Services</em>
+                    </li>
+                    <li>2009 – 2011<p><strong>Personal Assistant</strong></p><em>Bankwest – HR & Corporate Affairs</em>
+                    </li>
+                    <li>2008 – 2009<p><strong>Document Management / Index Officer</strong></p><em>Bankwest – Business
+                            Banking</em></li>
+                </ul>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-bottom-sticky-behaviour">
+        <p><a href="/copyright.html">© 2023 Copyright: </a>
+            <a href="/about.html" class="underline">Sue Lim</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
