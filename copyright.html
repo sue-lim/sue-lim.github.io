@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sue Lim">
+    <meta name="description" content="Portfolio home page for Web Development course.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/site.css"> <!-- Tailwind -->
+    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Custom Styles -->
+    <script defer src="/assets/js/main.js"></script>
+    <title>Sue Lim | Copyright</title>
+</head>
+
+<body class="bg-gradient-to-r from-[#2E266D] to-[#0B0320] text-white flex flex-col min-h-screen">
+
+    <!-- NAVIGATION -->
+    <header class="w-full">
+        <!-- NAV BAR -->
+        <nav class="flex justify-between items-center p-4">
+
+            <!-- Logo -->
+            <a href="/">
+                <img src="/assets/img/logo-375px.png" alt="return to homepage icon" class="w-14">
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex gap-4 text-sm">
+                <li><a href="/" class="nav-hover-behaviour">Home</a></li>
+                <li><a href="/about.html" class="nav-hover-behaviour">About</a></li>
+                <li><a href="/my-portfolio.html" class="nav-hover-behaviour">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="nav-hover-behaviour">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="nav-hover-behaviour">Resume</a></li>
+                <li><a href="/contact.html" class="nav-hover-behaviour">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger for Mobile / Sml View  -->
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="hidden peer-checked:block rounded absolute right-0 w-120 h-50 p-4 z-40 bg-slate-500 opacity-400 top-20 text-center md:hidden ">
+            <ul class="flex flex-col divide-y-2 divide-gray-300">
+                <li><a href="/" class="hamburger-menu-link">Home</a></li>
+                <li><a href="/about.html" class="hamburger-menu-link">About</a></li>
+                <li><a href="/my-portfolio.html" class="hamburger-menu-link">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="hamburger-menu-link">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="hamburger-menu-link">Resume</a></li>
+                <li><a href="/contact.html" class="hamburger-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="flex-grow px-4 sm:px-10 pb-20">
+        <h1 class="text-6xl mb-10 mt-10 md:text-6xl font-bold text-primary">Copyright</h1>
+
+        <div class="max-w-7xl mx-auto space-y-8">
+
+            <!-- COPYRIGHT INFO -->
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold">Copyright and References to Materials and Resources Used</h2>
+                <h3 class="font-semibold">Copyright</h3>
+                <p>Content is copyright Sue Lim and the respective owners of images, text, and other related content not
+                    originally created by Sue Lim for the purpose of this page.</p>
+            </section>
+
+            <!-- WEB REFERENCES -->
+            <section class="space-y-4">
+                <h3 class="font-semibold">Web References</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div
+                        class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                        <p class="font-semibold py-2">Tailwind Labs Inc. (2023)</p>
+                        <p class="py-2">
+                            Documentation – TailwindCSS
+                            <a class="underline" href="https://tailwindcss.com/docs">https://tailwindcss.com/docs</a>
+                        </p>
+                    </div>
+                    <div
+                        class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                        <p class="font-semibold py-2">CodePen</p>
+                        <p class="py-2">
+                            Online code editor for front-end projects
+                            <a class="underline" href="https://codepen.io/">https://codepen.io/</a>
+                        </p>
+                    </div>
+                    <div
+                        class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                        <p class="font-semibold py-2">Coolors</p>
+                        <p class="py-2">
+                            Color palette generator
+                            <a class="underline" href="https://coolors.co/">https://coolors.co/</a>
+                        </p>
+                    </div>
+                    <div
+                        class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                        <p class="font-semibold py-2">ScreenCraft</p>
+                        <p class="py-2">
+                            ScreenCraft Components
+                            <a class="underline"
+                                href="https://components.dev.screencraft.net.au/">https://components.dev.screencraft.net.au/</a>
+                        </p>
+                    </div>
+                    <div
+                        class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                        <p class="font-semibold py-2">Codepen IO</p>
+                        <p class="py-2">
+                            Codepen IO -
+                            TailwindCss menu with hamburger
+                            <a class="underline"
+                                href="https://codepen.io/degenge/pen/MWOLrqg">https://codepen.io/degenge/pen/MWOLrqg</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- IMAGE REFERENCES -->
+            <section class="space-y-4">
+                <h3 class="font-semibold">Image References</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div
+                        class="text-justify p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                        <p class="font-semibold py-2">Flaticon Education icons created by Freepik</p>
+                        <p class="py-2">
+                            Icon[Online Image]. Retrieved November 24, 2025, from
+                            <a class="underline" href="https://www.flaticon.com/"> https://www.flaticon.com/</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black/30 backdrop-blur text-center p-4 text-sm">
+        <p>© 2023 Copyright: <a href="/about.html" class="underline">Sue Lim</a></p>
+    </footer>
+
+</body>
+
+</html>

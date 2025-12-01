@@ -1,93 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>I am Sue...</title>
-    <meta name="description" content="Sue Lim Profile and portfolio page" />
-    <meta name="author" content="Sue Lim" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="wrap">
-    <header>
-      <div>
-        <nav>
-          <div id="nav-column-1" class="nav-column">
-            <a href="https://www.facebook.com/SueLim"
-              ><img
-                class="social-m-icons"
-                src="images/facebook.png"
-                alt="Facebook"
-            /></a>
-            <!--LINK FOR INSTAGRAM TO BE ADDED-->
-            <a href="http://www.instagram.com/sue_sheeee"
-              ><img
-                class="social-m-icons"
-                src="images/instagram.png"
-                alt="Instagram"
-            /></a>
-            <a href="https://www.linkedin.com/in/sue-lim-02295330/">
-              <img
-                class="social-m-icons"
-                src="images/linkedin.png"
-                alt="Linkedin"
-            /></a>
-          </div>
-          <div id="nav-column-2" class="nav-column">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="about-me.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sue Lim">
+    <meta name="description" content="Portfolio home page for Web Development course.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/site.css"> <!-- Tailwind -->
+    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Custom Styles -->
+    <script defer src="/assets/js/main.js"></script>
+    <title>Sue Lim | Home</title>
+</head>
+
+<body class="bg-gradient-to-r from-[#2E266D] to-[#0B0320] text-white overflow-hidden flex flex-col">
+
+    <!-- NAVIGATION -->
+    <header class="w-full">
+        <!-- NAV BAR -->
+        <nav class="flex justify-between items-center p-4">
+
+            <!-- Logo -->
+            <a href="/">
+                <img src="/assets/img/logo-375px.png" alt="return to homepage icon" class="w-14">
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex gap-4 text-sm">
+                <li><a href="/" class="nav-hover-behaviour">Home</a></li>
+                <li><a href="/about.html" class="nav-hover-behaviour">About</a></li>
+                <li><a href="/my-portfolio.html" class="nav-hover-behaviour">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="nav-hover-behaviour">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="nav-hover-behaviour">Resume</a></li>
+                <li><a href="/contact.html" class="nav-hover-behaviour">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger for Mobile / Sml View  -->
+            <button id="hamburger" class="md:hidden flex flex-col space-y-1">
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+                <span class="block w-7 h-0.5 bg-white transition"></span>
+            </button>
         </nav>
-        <div class="image-1">
-          <a href="index.html"
-            ><img class="image-4" src="images/profileavatar.png"
-          /></a>
-          <h1>this is <span class="blue-text">m</span>e...</h1>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu"
+            class="hidden peer-checked:block rounded absolute right-0 w-120 h-50 p-4 z-40 bg-slate-500 opacity-400 top-20 text-center md:hidden ">
+            <ul class="flex flex-col divide-y-2 divide-gray-300">
+                <li><a href="/" class="hamburger-menu-link">Home</a></li>
+                <li><a href="/about.html" class="hamburger-menu-link">About</a></li>
+                <li><a href="/my-portfolio.html" class="hamburger-menu-link">My Portfolio</a></li>
+                <li><a href="/my-tafe-projects.html" class="hamburger-menu-link">My TAFE Projects</a></li>
+                <li><a href="/resume.html" class="hamburger-menu-link">Resume</a></li>
+                <li><a href="/contact.html" class="hamburger-menu-link">Contact</a></li>
+            </ul>
         </div>
-      </div>
     </header>
 
-<div class="div-whitespace-1">
-</div>
-    <section class="section-a">
-      <p>
-        <h2>Hello, I'm <span class="blue-text">Sue</span> ... join me on my new tech discovering journey … let’s see where this all takes me …</h2>
+    <!-- MAIN CONTAINER -->
+    <main class="flex flex-col-reverse md:flex-row items-center justify-between px-10">
 
-        <p></p>
-      </p>
+        <!-- LEFT CONTENT -->
+        <div class="md:w-1/2 space-y-4">
+            <h1 class="text-5xl md:text-6xl font-bold text-primary">Sue Lim</h1>
+            <h6 class="text-2xl font-bold">Tech Enthusiast</h6>
+            <h5 class="text-xl">Full Stack Developer</h5>
+        </div>
 
-</section>
-<div class="div-whitespace-1">
-</div>
+        <!-- RIGHT IMAGE -->
+        <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
+            <img src="/assets/img/portrait-img-1186x1188.JPG"
+                class="rounded-full object-cover border-white filter grayscale animate-slideIn" alt="Portrait">
+        </div>
+    </main>
 
-<!-- 3 COLUMNS BOXES -->
-<section class="section-b">
-  <div class="hcolumn" id="hcolumn-3">
-    <h4>Portfolio</h4>
-    <a href ="portfolio.html"><image class="h-icons" src="images/website-design.png"></a>
-    </div>	
-<br>
-	<div class="hcolumn" id="hcolumn-2">
-    <h4>About me</h4>
-  <a href ="about-me.html"><image class="h-icons" src="images/user.png"></a>
-</div>
-<br>
-<div class="hcolumn" id="hcolumn-1">
-  <h4>Contact Me</h4>
-  <a href ="contact.html"><image class="h-icons" src="images/contact-form.png"></a>
-</div>
-</section>
-<div class="div-whitespace-1">
-</div>
+    <!-- FOOTER -->
+    <footer class="footer-bottom-sticky-behaviour">
+        <p><a href="/copyright.html">© 2023 Copyright: </a>
+            <a href="/about.html" class="underline">Sue Lim</a>
+        </p>
+    </footer>
 
-	<footer class="image-2">
-    &copy; 
-    Sue Lim
-	</footer>
-</div>
-  </body>
+</body>
+
 </html>

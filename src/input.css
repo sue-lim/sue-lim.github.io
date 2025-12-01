@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-hover-behaviour {
+        @apply hover:underline hover:decoration-2 hover:decoration-white hover:underline-offset-8 transition
+    }
+
+    .nav-hover-behaviour {
+        @apply hover:underline hover:decoration-2 hover:decoration-white hover:underline-offset-8 transition
+    }
+
+    .nav-link-gap {
+        @apply flex items-center justify-between p-4
+    }
+
+    .hamburger-menu-link {
+        @apply text-white transition-all duration-200;
+    }
+
+    .hamburger-menu-link:hover {
+        @apply text-purple-700 scale-110;
+    }
+
+    .footer-bottom-sticky-behaviour {
+        @apply fixed bottom-0 left-0 w-full text-center p-4 text-sm bg-black/30 backdrop-blur
+    }
+
+
+    .h1-main-title {
+        @apply text-xl mb-10 mt-10 sm:text-6xl font-bold text-primary
+    }
+
+    .slider-box {
+        @apply flex flex-col items-center justify-center w-72 h-72 p-8 rounded-xl bg-gradient-to-b from-[#2E266D] to-[#0B0320] border border-gray-400/60 shadow-lg shadow-black/30 absolute text-center transition duration-500 cursor-pointer;
+    }
+
+    .my-portfolio-slider-dots {
+        @apply w-3 h-3 rounded-full bg-white/30 cursor-pointer
+    }
+}
