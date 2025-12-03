@@ -1,40 +1,45 @@
-
 // Contact for input / validations
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contactForm");
-    const statusDiv = document.getElementById("statusMessage");
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();   // Stop page refresh
+    // Clear previous errors
+    document.getElementById('nameError').textContent = '';
+    document.getElementById('emailError').textContent = '';
+    document.getElementById('messageError').textContent = '';
 
-        const name = form.elements["from_name"].value.trim();
-        const email = form.elements["from_email"].value.trim();
-        const message = form.elements["message"].value.trim();
+    let name = document.getElementById('name').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let message = document.getElementById('message').value.trim();
 
-        // Validate the field separately
-        if (!name) {
-            statusDiv.textContent = "Please enter your name.";
-            return;
-        }
+    let isValid = true;
 
-        if (!email) {
-            statusDiv.textContent = "Please enter your email.";
-            return;
-        }
+    // Validate Name
+    if (name === '') {
+        document.getElementById('nameError').textContent = 'Name is required.';
+        isValid = false;
+    }
 
-        if (!message) {
-            statusDiv.textContent = "Please enter a message.";
-            return;
-        }
-        statusDiv.textContent = "Sending...";
+    // Validate Email using Regex
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email === '') {
+        document.getElementById('emailError').textContent = 'Email is required.';
+        isValid = false;
+    } else if (!emailRegex.test(email)) {
+        document.getElementById('emailError').textContent = 'Please enter a valid email.';
+        isValid = false;
+    }
 
-        // simulate async send
-        setTimeout(() => {
-            statusDiv.textContent = "Message sent!";
-            form.reset(); // Optional: clear form after send
-        }, 1500);
-    });
+    // Validate Message
+    if (message === '') {
+        document.getElementById('messageError').textContent = 'Message cannot be empty.';
+        isValid = false;
+    }
+
+    if (isValid) {
+        alert('Form submitted successfully!');
+    }
 });
+
 
 
 // slick on the slides to move 
