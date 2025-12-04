@@ -13,9 +13,13 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     let isValid = true;
 
-    // Validate Name
+    // Validate Name using Regex 
+    let nameRegex = /^[A-Za-z\s'-]+$/;
     if (name === '') {
-        document.getElementById('nameError').textContent = 'Name is required.';
+        document.getElementById('nameError').textContent = 'Name is required';
+        isValid = false;
+    } else if (!nameRegex.test(name)) {
+        document.getElementById('nameError').textContent = 'Name must contain only letters';
         isValid = false;
     }
 
@@ -29,8 +33,9 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
         isValid = false;
     }
 
-    // Validate Message
-    if (message === '') {
+    // Validate Message using regex 
+    let notBlankRegex = /\S+/;
+    if (!notBlankRegex.test(message)) {
         document.getElementById('messageError').textContent = 'Message cannot be empty.';
         isValid = false;
     }
